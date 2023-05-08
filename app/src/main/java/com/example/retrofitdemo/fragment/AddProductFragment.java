@@ -81,6 +81,7 @@ public class AddProductFragment extends Fragment {
             pro_name_edt.setText("" + productdatasList.get(0).getProName());
             pro_price_edt.setText("" + productdatasList.get(0).getProPrice());
             pro_dec_edt.setText("" + productdatasList.get(0).getProDes());
+            product_uri = Uri.parse("1");
             String url = "https://hetsweb.000webhostapp.com/myApp/" + productdatasList.get(0).getProImage();
             Picasso.get().load(url).networkPolicy(NetworkPolicy.NO_CACHE).memoryPolicy(MemoryPolicy.NO_CACHE).placeholder(R.drawable.image_placeholder).into(add_product_img);
         }
